@@ -54,8 +54,20 @@ p {
   font-weight: bold;
 }
 
+.custom-form a:hover {
+  color: #ed5057;
+  font-weight: bold;
+}
+
 .custom-form .btn {
   background-color: #ed5057;
+  border: none;
+  width: 100%;
+}
+
+.custom-form .btn:hover {
+  background-color: #ed5057;
+  opacity: .65;
   border: none;
   width: 100%;
 }
@@ -102,6 +114,12 @@ p {
 }
 
 .services a {
+  color: #ed5057;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.services a:hover {
   color: #ed5057;
   font-weight: bold;
   text-transform: uppercase;
@@ -207,6 +225,13 @@ p {
 
 .footer-form .btn {
   background-color: #ed5057;
+  border: none;
+  width: 100%;
+}
+
+.footer-form .btn:hover {
+  background-color: #ed5057;
+  opacity: .65;
   border: none;
   width: 100%;
 }

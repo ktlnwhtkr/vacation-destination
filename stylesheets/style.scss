@@ -2,9 +2,19 @@ p {
   color: #333;
 }
 
+a {
+  color: #ed5057;
+}
+
+a:hover {
+  color: #ed5057;
+}
+
 .top-nav {
   background-color: #fff;
   overflow: hidden;
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
 
 .top-nav .nav-item .nav-link {
@@ -31,7 +41,7 @@ p {
   background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=906be87a2609423ee9767683b42fe061") center center no-repeat;
   background-size: cover;
   
-   &:before {
+  &:before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -244,6 +254,10 @@ p {
   color: #ed5057;
 }
 
+.footer-bottom a:hover {
+  color: #fff;
+}
+
 @media (min-width: 400px) { 
   .custom-form {
   background: #fff;
@@ -264,11 +278,35 @@ p {
   }
 }
 
-@media (min-width: 576px) { 
-
+@media (min-width: 0px) { 
+  .navbar-brand {
+    display: none;
+  } 
+  .top-nav .nav-link:hover {
+  background-color: #fff;
+	color: #ed5057;
+}
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 576px) { 
+  .navbar-brand {
+    display: none;
+  } 
+  .top-nav .nav-link:hover {
+  background-color: #fff;
+	color: #ed5057;
+}
+}
+
+@media (min-width: 768px) {
+ .navbar-brand {
+    display: none;
+  } 
+  
+  .top-nav .nav-link:hover {
+  background-color: #fff;
+	color: #ed5057;
+}
 .red {
   margin-bottom: -70px;
   background-color: #ed5057;
@@ -282,6 +320,26 @@ p {
 
 
 @media (min-width: 992px) { 
+  .top-nav .nav-item .nav-link {
+	color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 45px 30px;
+}
+
+.top-nav .nav-link:hover {
+  background-color: #ed5057;
+	color: #fff;
+}
+
+.top-nav .dropdown-menu {
+	background-color: #fff;
+	color: #fff;
+}
+ .navbar-brand {
+    display: inline;
+  } 
   .red {
   margin-bottom: -70px;
   background-color: #ed5057;
@@ -291,11 +349,30 @@ p {
   -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
   clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
 }
-
 }
 
 
 @media (min-width: 1200px) { 
+  .top-nav .nav-item .nav-link {
+	color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 45px 30px;
+}
+
+.top-nav .nav-link:hover {
+  background-color: #ed5057;
+	color: #fff;
+}
+
+.top-nav .dropdown-menu {
+	background-color: #fff;
+	color: #fff;
+}
+  .navbar-brand {
+    display: inline;
+  } 
 .custom-form {
   background: #fff;
   padding: 50px;

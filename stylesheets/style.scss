@@ -10,6 +10,11 @@ a:hover {
   color: #ed5057;
 }
 
+.fa-bars {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
 .top-nav {
   background-color: #fff;
   overflow: hidden;
@@ -145,17 +150,21 @@ a:hover {
     color: black;
     text-decoration: none;
 }
+
 .places {
     margin-bottom: 0px;
     padding: 50px 0px;
     background-color: #f4f4f4;
 }
+
 .places .row {
     margin-top: 20px;
 }
+
 .places a {
     color: black;
 }
+
 .places .card {
     background-color: #fff;
     padding: 0;
@@ -170,14 +179,17 @@ a:hover {
     border-top-left-radius: 1px;
     border-top-right-radius: 1px;
 }
+
 .places .card h4 {
     margin: 20px;
 }
+
 .places .card p {
     margin: 20px;
     opacity: 0.65;
 }
-.places .blue-button {
+
+.places .red-button {
     width: 90%;
     -webkit-transition: background-color 1s , color 1s; /* For Safari 3.1 to 6.0 */
     transition: background-color 1s , color 1s;
@@ -190,7 +202,8 @@ a:hover {
     padding: 5px 0px;
     display: inline-block;
 }
-.places .blue-button:hover {
+
+.places .red-button:hover {
     background-color: #ed5057;
     color: #fff;
     opacity: 0.65;
@@ -276,6 +289,11 @@ a:hover {
   .red h1 {
     font-size: 2.1rem;
   }
+
+  .services {
+    margin-top: -100px;
+  }
+
 }
 
 @media (min-width: 0px) { 
@@ -303,7 +321,7 @@ a:hover {
     display: none;
   } 
   
-  .top-nav .nav-link:hover {
+.top-nav .nav-link:hover {
   background-color: #fff;
 	color: #ed5057;
 }

@@ -43,7 +43,7 @@ a:hover {
 .bg-image-full {
   position: relative;
   z-index: 1;
-  background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=906be87a2609423ee9767683b42fe061") center center no-repeat;
+  background: url("../images/starry-night.jpg") center center no-repeat;
   background-size: cover;
   
   &:before {
@@ -214,7 +214,7 @@ a:hover {
   padding-bottom: 100px;
   position: relative;
   z-index: 1;
-  background: url("https://images.unsplash.com/photo-1533656338503-b22f63e96cd8?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=0c827023e2cfa8ed29629651a1b9c7b9") center center no-repeat;
+  background: url("../images/mountainside-beach-town-large.jpg") center center no-repeat;
   background-size: cover;
   
   &:before {

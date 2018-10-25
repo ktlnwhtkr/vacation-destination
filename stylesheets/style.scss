@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 p {
   color: #333;
 }
@@ -45,7 +53,7 @@ a:hover {
   z-index: 1;
   background: url("../images/starry-night.jpg") center center no-repeat;
   background-size: cover;
-  
+
   &:before {
 	content: '';
 	position: absolute;
@@ -62,7 +70,7 @@ a:hover {
   position: relative;
   background: #fff;
   padding: 50px;
-  margin: 100px 350px;
+  margin: 100px 200px;
 }
 
 .custom-form a {
@@ -97,6 +105,10 @@ a:hover {
   clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
 }
 
+.red:after {
+  background-color: #fff;
+}
+
 .red p {
   color: #fff;
 }
@@ -121,7 +133,13 @@ a:hover {
 }
 
 .services {
+  position: relative;
+  top: -250px;
   text-align: center;
+  background-color: #fff;
+  height: 600px;
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+  clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 .services h3 {
@@ -144,6 +162,7 @@ a:hover {
 .fa-gavel, .fa-plane, .fa-life-ring {
   color: #ed5057;
   margin-bottom: 20px;
+  margin-top: 180px;
 }
 
 .places a:hover {
@@ -152,6 +171,7 @@ a:hover {
 }
 
 .places {
+    margin-top: -250px;
     margin-bottom: 0px;
     padding: 50px 0px;
     background-color: #f4f4f4;
@@ -209,13 +229,42 @@ a:hover {
     opacity: 0.65;
 }
 
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
   z-index: 1;
-  background: url("../images/mountainside-beach-town-large.jpg") center center no-repeat;
-  background-size: cover;
+  /*background: url("../images/mountainside-beach-town-large.jpg") center center no-repeat;
+  background-size: cover;*/
   
   &:before {
 	content: '';
@@ -271,139 +320,198 @@ a:hover {
   color: #fff;
 }
 
-@media (min-width: 400px) { 
+
+@media (max-width: 1199.98px) {
+  .top-nav .nav-item .nav-link {
+	color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 45px 30px;
+}
+
+.top-nav .nav-link:hover {
+  background-color: #ed5057;
+	color: #fff;
+}
+
+.top-nav .dropdown-menu {
+	background-color: #fff;
+	color: #fff;
+}
+
+.navbar-brand {
+    display: inline;
+  }
+
   .custom-form {
+    position: relative;
+    background: #fff;
+    padding: 50px;
+    margin: 100px 100px;
+  }
+
+
+.red {
+  margin-bottom: -10px;
+  background-color: #ed5057;
+  text-align: center;
+  color: #fff;
+  height: 450px;
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+  clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
+}
+}
+
+
+@media (max-width: 992.98px) {
+  .top-nav .nav-item .nav-link {
+	color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 45px 30px;
+}
+
+.top-nav .nav-link:hover {
+  background-color: #ed5057;
+	color: #fff;
+}
+
+.top-nav .dropdown-menu {
+	background-color: #fff;
+	color: #fff;
+}
+
+ .navbar-brand {
+    display: inline;
+  }
+
+  .custom-form {
+    position: relative;
+    background: #fff;
+    padding: 50px;
+    margin: 100px 100px;
+  }
+
+  .red {
+  margin-bottom: -70px;
+  background-color: #ed5057;
+  text-align: center;
+  color: #fff;
+  height: 480px;
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+  clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
+}
+
+.fa-gavel, .fa-plane, .fa-life-ring {
+  margin-top: 140px;
+ } 
+ 
+}
+
+@media (max-width: 767.98px) {
+
+  .navbar-brand {
+     display: none;
+   }
+ 
+ .top-nav .nav-link:hover {
+   background-color: #fff;
+   color: #ed5057;
+ }
+
+ .custom-form {
+  position: relative;
   background: #fff;
   padding: 50px;
-  margin: 100px 20px;
+  margin: 100px 50px;
 }
-  .red {
-  background-color: #ed5057;
+ 
+ .red {
+   background-color: #ed5057;
+   text-align: center;
+   color: #fff;
+   height: 480px;
+   -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+   clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
+ }
+
+ .fa-gavel {
+  margin-top: 120px;
+ } 
+
+.fa-plane, .fa-life-ring {
+  color: #ed5057;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.services {
+  position: relative;
+  top: -265px;
+  margin-top: 80px;
   text-align: center;
-  color: #fff;
-  height: 500px;
-  -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
-  clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
-}
-  
-  .red h1 {
-    font-size: 2.1rem;
-  }
-
-  .services {
-    margin-top: -100px;
-  }
-
+  background-color: #fff;
+  height: 1000px;
+  -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
-@media (min-width: 0px) { 
+.places {
+  margin-top: -270px;
+  margin-bottom: 0px;
+  padding: 50px 0px;
+  background-color: #f4f4f4;
+}
+}
+
+ 
+ @media (max-width: 575.98px) {
   .navbar-brand {
     display: none;
-  } 
+  }
   .top-nav .nav-link:hover {
   background-color: #fff;
 	color: #ed5057;
 }
-}
 
-@media (min-width: 576px) { 
-  .navbar-brand {
-    display: none;
-  } 
-  .top-nav .nav-link:hover {
-  background-color: #fff;
-	color: #ed5057;
-}
-}
-
-@media (min-width: 768px) {
- .navbar-brand {
-    display: none;
-  } 
-  
-.top-nav .nav-link:hover {
-  background-color: #fff;
-	color: #ed5057;
-}
-.red {
-  margin-bottom: -70px;
-  background-color: #ed5057;
-  text-align: center;
-  color: #fff;
-  height: 400px;
-  -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
-  clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
-}
-}
-
-
-@media (min-width: 992px) { 
-  .top-nav .nav-item .nav-link {
-	color: #333;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 17px;
-  padding: 45px 30px;
-}
-
-.top-nav .nav-link:hover {
-  background-color: #ed5057;
-	color: #fff;
-}
-
-.top-nav .dropdown-menu {
-	background-color: #fff;
-	color: #fff;
-}
- .navbar-brand {
-    display: inline;
-  } 
-  .red {
-  margin-bottom: -70px;
-  background-color: #ed5057;
-  text-align: center;
-  color: #fff;
-  height: 400px;
-  -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
-  clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
-}
-}
-
-
-@media (min-width: 1200px) { 
-  .top-nav .nav-item .nav-link {
-	color: #333;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 17px;
-  padding: 45px 30px;
-}
-
-.top-nav .nav-link:hover {
-  background-color: #ed5057;
-	color: #fff;
-}
-
-.top-nav .dropdown-menu {
-	background-color: #fff;
-	color: #fff;
-}
-  .navbar-brand {
-    display: inline;
-  } 
 .custom-form {
   background: #fff;
   padding: 50px;
-  margin: 100px 250px;
+  margin: 20px 20px;
 }
-  
+
 .red {
-  margin-bottom: -70px;
   background-color: #ed5057;
   text-align: center;
   color: #fff;
-  height: 400px;
+  height: 550px;
   -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
   clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
+}
+
+.services {
+  margin-top: -50px;
+  height: 1150px;
+}
+
+.places {
+  margin-top: -270px;
+  margin-bottom: 0px;
+  padding: 50px 0px;
+  background-color: #f4f4f4;
+}
+
+}
+
+
+@media (max-width: 0px) {
+  .navbar-brand {
+    display: none;
+  }
+  .top-nav .nav-link:hover {
+  background-color: #fff;
+	color: #ed5057;
 }
 }

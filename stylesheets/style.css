@@ -1,91 +1,83 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
 p {
-  color: #333;
-}
+  color: #333; }
 
 a {
-  color: #ed5057;
-}
+  color: #ed5057; }
 
 a:hover {
-  color: #ed5057;
-}
+  color: #ed5057; }
 
 .fa-bars {
   margin-bottom: 15px;
-  margin-top: 15px;
-}
+  margin-top: 15px; }
 
 .top-nav {
   background-color: #fff;
   overflow: hidden;
   margin-top: -10px;
-  margin-bottom: -10px;
-}
+  margin-bottom: -10px; }
 
 .top-nav .nav-item .nav-link {
   color: #333;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 17px;
-  padding: 45px 30px;
-}
+  padding: 45px 30px; }
 
 .top-nav .nav-link:hover {
   background-color: #ed5057;
-  color: #fff;
-}
+  color: #fff; }
 
 .top-nav .dropdown-menu {
   background-color: #fff;
-  color: #fff;
-}
+  color: #fff; }
 
 .bg-image-full {
   position: relative;
   z-index: 1;
   background: url("../images/starry-night.jpg") center center no-repeat;
-  background-size: cover;
-}
-.bg-image-full:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #1f3644;
-  opacity: .9;
-}
+  background-size: cover; }
+  .bg-image-full:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1f3644;
+    opacity: .9; }
 
 .custom-form {
   position: relative;
   background: #fff;
   padding: 50px;
-  margin: 100px 350px;
-}
+  margin: 100px 200px; }
 
 .custom-form a {
   color: #ed5057;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .custom-form a:hover {
   color: #ed5057;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .custom-form .btn {
   background-color: #ed5057;
   border: none;
-  width: 100%;
-}
+  width: 100%; }
 
 .custom-form .btn:hover {
   background-color: #ed5057;
   opacity: .65;
   border: none;
-  width: 100%;
-}
+  width: 100%; }
 
 .red {
   background-color: #ed5057;
@@ -93,12 +85,13 @@ a:hover {
   color: #fff;
   height: 400px;
   -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
-  clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
-}
+  clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0); }
+
+.red:after {
+  background-color: #fff; }
 
 .red p {
-  color: #fff;
-}
+  color: #fff; }
 
 .red .btn-sub {
   background-color: transparent;
@@ -111,87 +104,81 @@ a:hover {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .red .btn-sub:hover {
   background-color: #fff;
-  color: #ed5057;
-}
+  color: #ed5057; }
 
 .services {
+  position: relative;
+  top: -250px;
   text-align: center;
-}
+  background-color: #fff;
+  height: 600px;
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+  clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0); }
 
 .services h3 {
   color: #ed5057;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 .services a {
   color: #ed5057;
   font-weight: bold;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .services a:hover {
   color: #ed5057;
   font-weight: bold;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .fa-gavel, .fa-plane, .fa-life-ring {
   color: #ed5057;
   margin-bottom: 20px;
-}
+  margin-top: 180px; }
 
 .places a:hover {
   color: black;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .places {
+  margin-top: -250px;
   margin-bottom: 0px;
   padding: 50px 0px;
-  background-color: #f4f4f4;
-}
+  background-color: #f4f4f4; }
 
 .places .row {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 .places a {
-  color: black;
-}
+  color: black; }
 
 .places .card {
   background-color: #fff;
   padding: 0;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
-  border-radius: 1px;
-}
+  border-radius: 1px; }
 
 .places .card img {
   width: 100%;
   height: 275px;
   border-top-left-radius: 1px;
-  border-top-right-radius: 1px;
-}
+  border-top-right-radius: 1px; }
 
 .places .card h4 {
-  margin: 20px;
-}
+  margin: 20px; }
 
 .places .card p {
   margin: 20px;
-  opacity: 0.65;
-}
+  opacity: 0.65; }
 
 .places .red-button {
   width: 90%;
   -webkit-transition: background-color 1s , color 1s;
   /* For Safari 3.1 to 6.0 */
+  -o-transition: background-color 1s , color 1s;
   transition: background-color 1s , color 1s;
   min-height: 30px;
   background-color: #ed5057;
@@ -200,211 +187,218 @@ a:hover {
   font-weight: lighter;
   margin: 0px 20px 15px 15px;
   padding: 5px 0px;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .places .red-button:hover {
   background-color: #ed5057;
   color: #fff;
-  opacity: 0.65;
-}
+  opacity: 0.65; }
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100; }
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px; }
 
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
   z-index: 1;
-  background: url("../images/mountainside-beach-town-large.jpg") center center no-repeat;
-  background-size: cover;
-}
-.footer:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #1f3644;
-  opacity: .9;
-}
+  /*background: url("../images/mountainside-beach-town-large.jpg") center center no-repeat;
+  background-size: cover;*/ }
+  .footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1f3644;
+    opacity: .9; }
 
 .footer-form {
   background: #fff;
-  padding: 50px;
-}
+  padding: 50px; }
 
 .footer-form a {
   color: #ed5057;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .footer-form .btn {
   background-color: #ed5057;
   border: none;
-  width: 100%;
-}
+  width: 100%; }
 
 .footer-form .btn:hover {
   background-color: #ed5057;
   opacity: .65;
   border: none;
-  width: 100%;
-}
+  width: 100%; }
 
 .footer-bottom {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-  background-color: #1f3644;
-}
+  background-color: #1f3644; }
 
 .footer-bottom p {
-  color: #fff;
-}
+  color: #fff; }
 
 .footer-bottom a {
-  color: #ed5057;
-}
+  color: #ed5057; }
 
 .footer-bottom a:hover {
-  color: #fff;
-}
+  color: #fff; }
 
-@media (min-width: 400px) {
+@media (max-width: 1199.98px) {
+  .top-nav .nav-item .nav-link {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 45px 30px; }
+  .top-nav .nav-link:hover {
+    background-color: #ed5057;
+    color: #fff; }
+  .top-nav .dropdown-menu {
+    background-color: #fff;
+    color: #fff; }
+  .navbar-brand {
+    display: inline; }
   .custom-form {
+    position: relative;
     background: #fff;
     padding: 50px;
-    margin: 100px 20px;
-  }
+    margin: 100px 100px; }
+  .red {
+    margin-bottom: -10px;
+    background-color: #ed5057;
+    text-align: center;
+    color: #fff;
+    height: 450px;
+    -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+    clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0); } }
 
+@media (max-width: 992.98px) {
+  .top-nav .nav-item .nav-link {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 45px 30px; }
+  .top-nav .nav-link:hover {
+    background-color: #ed5057;
+    color: #fff; }
+  .top-nav .dropdown-menu {
+    background-color: #fff;
+    color: #fff; }
+  .navbar-brand {
+    display: inline; }
+  .custom-form {
+    position: relative;
+    background: #fff;
+    padding: 50px;
+    margin: 100px 100px; }
+  .red {
+    margin-bottom: -70px;
+    background-color: #ed5057;
+    text-align: center;
+    color: #fff;
+    height: 480px;
+    -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+    clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0); }
+  .fa-gavel, .fa-plane, .fa-life-ring {
+    margin-top: 140px; } }
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    display: none; }
+  .top-nav .nav-link:hover {
+    background-color: #fff;
+    color: #ed5057; }
+  .custom-form {
+    position: relative;
+    background: #fff;
+    padding: 50px;
+    margin: 100px 50px; }
   .red {
     background-color: #ed5057;
     text-align: center;
     color: #fff;
-    height: 500px;
+    height: 480px;
     -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
-    clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
-  }
-
-  .red h1 {
-    font-size: 2.1rem;
-  }
-
+    clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0); }
+  .fa-gavel {
+    margin-top: 120px; }
+  .fa-plane, .fa-life-ring {
+    color: #ed5057;
+    margin-bottom: 20px;
+    margin-top: 50px; }
   .services {
-    margin-top: -100px;
-  }
-}
-@media (min-width: 0px) {
-  .navbar-brand {
-    display: none;
-  }
-
-  .top-nav .nav-link:hover {
-    background-color: #fff;
-    color: #ed5057;
-  }
-}
-@media (min-width: 576px) {
-  .navbar-brand {
-    display: none;
-  }
-
-  .top-nav .nav-link:hover {
-    background-color: #fff;
-    color: #ed5057;
-  }
-}
-@media (min-width: 768px) {
-  .navbar-brand {
-    display: none;
-  }
-
-  .top-nav .nav-link:hover {
-    background-color: #fff;
-    color: #ed5057;
-  }
-
-  .red {
-    margin-bottom: -70px;
-    background-color: #ed5057;
+    position: relative;
+    top: -265px;
+    margin-top: 80px;
     text-align: center;
-    color: #fff;
-    height: 400px;
-    -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
-    clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
-  }
-}
-@media (min-width: 992px) {
-  .top-nav .nav-item .nav-link {
-    color: #333;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 17px;
-    padding: 45px 30px;
-  }
-
-  .top-nav .nav-link:hover {
-    background-color: #ed5057;
-    color: #fff;
-  }
-
-  .top-nav .dropdown-menu {
     background-color: #fff;
-    color: #fff;
-  }
+    height: 1000px;
+    -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); }
+  .places {
+    margin-top: -270px;
+    margin-bottom: 0px;
+    padding: 50px 0px;
+    background-color: #f4f4f4; } }
 
+@media (max-width: 575.98px) {
   .navbar-brand {
-    display: inline;
-  }
-
-  .red {
-    margin-bottom: -70px;
-    background-color: #ed5057;
-    text-align: center;
-    color: #fff;
-    height: 400px;
-    -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
-    clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
-  }
-}
-@media (min-width: 1200px) {
-  .top-nav .nav-item .nav-link {
-    color: #333;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 17px;
-    padding: 45px 30px;
-  }
-
+    display: none; }
   .top-nav .nav-link:hover {
-    background-color: #ed5057;
-    color: #fff;
-  }
-
-  .top-nav .dropdown-menu {
     background-color: #fff;
-    color: #fff;
-  }
-
-  .navbar-brand {
-    display: inline;
-  }
-
+    color: #ed5057; }
   .custom-form {
     background: #fff;
     padding: 50px;
-    margin: 100px 250px;
-  }
-
+    margin: 20px 20px; }
   .red {
-    margin-bottom: -70px;
     background-color: #ed5057;
     text-align: center;
     color: #fff;
-    height: 400px;
+    height: 550px;
     -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
-    clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0);
-  }
-}
+    clip-path: polygon(100% 0, 100% 50%, 50% 70%, 0 50%, 0 0); }
+  .services {
+    margin-top: -50px;
+    height: 1150px; }
+  .places {
+    margin-top: -270px;
+    margin-bottom: 0px;
+    padding: 50px 0px;
+    background-color: #f4f4f4; } }
 
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 0px) {
+  .navbar-brand {
+    display: none; }
+  .top-nav .nav-link:hover {
+    background-color: #fff;
+    color: #ed5057; } }
